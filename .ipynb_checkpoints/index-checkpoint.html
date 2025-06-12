@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenata Pianos - Buy Your Perfect Piano</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+	function check(){
+		var name;
+		name = form1.name.value;
+		if(name.trim() == "")
+		{
+			alert("Enter Name");
+		}
+		else
+		{
+			alert("Hi"+name);
+
+		}
+	}
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Serenata Pianos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="http://www.google.com">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="home" class="hero">
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-content">
+        <h2>Your Dream Piano Awaits</h2>
+        <p>Discover premium pianos for every skill level, style, and budget.</p>
+        <a href="#products" class="cta-btn">Browse Our Pianos</a>
+    </div>
+</section>
+
+
+
+    <section id="products" class="product-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="piano1.jpg" alt="Grand Piano">
+                    <h3>Grand Piano</h3>
+                    <p>Luxury sound with elegant design. Perfect for any concert hall.</p>
+                </div>
+                <div class="product-card">
+                    <img src="piano2.jpg" alt="Upright Piano">
+                    <h3>Upright Piano</h3>
+                    <p>Compact and rich in sound, ideal for home use.</p>
+                </div>
+                <div class="product-card">
+                    <img src="piano3.jpg" alt="Digital Piano">
+                    <h3>Digital Piano</h3>
+                    <p>Modern and versatile, perfect for practicing and performance.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Serenata Pianos, we have been offering high-quality pianos for over 25 years. Whether you're a professional musician or a beginner, we have the perfect piano for you. Our expert staff is dedicated to helping you find your ideal instrument.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" id = "form1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit-btn" onclick = "check()">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Serenata Pianos. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+           const video = document.getElementById('background-video');
+           video.addEventListener('timeupdate', () => {
+           	if (video.currentTime >= 32) {
+                	video.currentTime = 0; // Restart the video
+           }
+          });
+    </script>
+
+</body>
+</html>

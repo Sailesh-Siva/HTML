@@ -1,0 +1,10 @@
+HTML Structure Overview
+The HTML structure is divided into distinct sections, which help organize the page's content and enhance user navigation. The main parts of this structure include:
+
+<head> Section: Contains metadata, links to stylesheets, and the title of the page.
+<header> Section: Contains navigation links and branding.
+<section id="home">: A hero section with a large introductory message.
+<section id="products">: Displays the products available for purchase (pianos).
+<section id="about">: Provides details about the company.
+<section id="contact">: A contact form for users to reach out.
+<footer> Section: Footer that includes copyright information.
